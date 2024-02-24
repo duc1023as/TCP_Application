@@ -176,11 +176,8 @@ private:
 				// an error would be available...
 				if (!ec)
 				{
-					// ... no error, so check if the message header just sent also
-					// has a message body...
 					if (m_qMessagesOut.front().fileName.size() > 0)
 					{
-						// ...it does, so issue the task to write the body bytes
 						WriteFileName();
 					}
 					else
