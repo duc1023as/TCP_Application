@@ -99,7 +99,7 @@ public:
 protected:
 	std::mutex muxQueue;//comment muxQueue 123
 	std::deque<T> deqQueue;//comment 2
-	std::condition_variable cvBlocking;
+	std::condition_variable cvBlocking;//comment 4
 	std::mutex muxBlocking;
 };
 
